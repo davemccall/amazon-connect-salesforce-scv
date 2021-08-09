@@ -71,8 +71,8 @@ Now that the resources are deployed, we need to configure some triggers. These t
 22. Find the S3 bucket with the Logical ID **scvvmxs3transcriptsbucket**
 23. **Select the link** in the Physical ID column to open that resource in a new tab and switch to that tab.
 24. In the S3 Bucket detail page, select the **Properties** tab
-25. In the Advanced settings section, select **Events**
-26. Select **+ Add notification**
+25. In the Advanced settings section, select **Event Notifications**
+26. Select **Create event notification**
 27. In the **Name** field, enter `SendToPackager`
 28. In the Events section, select **PUT**
 29. In the Suffix field, enter `.json`
