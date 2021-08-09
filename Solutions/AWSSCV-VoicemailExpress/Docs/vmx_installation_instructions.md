@@ -49,7 +49,7 @@ The next step is to deploy the CloudFormation template. This template builds all
 ## Configure the Triggers
 Now that the resources are deployed, we need to configure some triggers. These triggers move the voicemail process along as each step is completed.
 1. While in the Stack details, select **Reources**
-2. Find the Lambda function with the Logical ID **scvvmxkvstos3**
+2. Find the Lambda function with the Logical ID **AWSSCV_vmx_kvs_to_s3**
 3. **Select the link** in the Physical ID column to open that resource in a new tab and switch to that tab.
 4. In the Designer section of the Lambda function, select **+ Add trigger**
 5. In the Trigger configuration, **select Kinesis**
@@ -60,8 +60,8 @@ Now that the resources are deployed, we need to configure some triggers. These t
 11. Find the S3 bucket with the Logical ID **scvvmxs3recordingsbucket**
 12. **Select the link** in the Physical ID column to open that resource in a new tab and switch to that tab.
 13. In the S3 Bucket detail page, select the **Properties** tab
-14. In the Advanced settings section, select **Events**
-15. Select **+ Add notification**
+14. In the Advanced settings section, select **Event Notifications**
+15. Select **Create event notification**
 16. In the **Name** field, enter `SendToTranscriber`
 17. In the Events section, select **PUT**
 18. In the Suffix field, enter `.wav`
